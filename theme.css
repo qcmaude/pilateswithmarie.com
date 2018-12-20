@@ -36,6 +36,16 @@ img {
 	padding-top: 5.75em !important;
 }
 
+.navbar-burger {
+	height: inherit !important;
+}
+
+.navbar-menu {
+	background-color: #f0f4f4 !important;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+
 .navigation {
 	font-size:15px;
 	font-family: "Source Sans Pro", sans-serif;
@@ -78,6 +88,7 @@ img {
 .navbar-end > .navbar-item:hover {
 	font-weight: 700;
 	color: inherit;
+	background-color: inherit;
 }
 
 .navbar-end > .navbar-item.is-active {
@@ -87,9 +98,14 @@ img {
 	font-style: bold;
 }
 
+.section-border {
+	border-top: 1px solid #fff;
+	margin-top: 20px !important;
+	padding-top: 20px !important;
+}
+
 .logo-text {
 	font-family: "Abril Fatface", serif;
-	/*width: 100px;*/
 	font-size: 1.5em;
 	text-align: left;
 	line-height:0.9;
@@ -102,18 +118,11 @@ img {
 	width:auto;
 	height:4em;
 	max-height: 4em !important;
-	/*width:50px;*/
 }
 
-.main-content {/*
-	width: 80%;
-	margin: 0 auto;
-	padding: 35px;
-	min-height: 40%;*/
-}
-
-.headshot {
-	width: 370px;
+.headshot-container {
+	display: flex !important;
+	align-items: center !important;
 }
 
 .title {

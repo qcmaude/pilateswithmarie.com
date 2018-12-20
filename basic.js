@@ -21,4 +21,22 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Get all "navbar-item" items
+  const $navItems = Array.prototype.slice.call(document.querySelectorAll('.navbar-item'), 0);
+
+  // Check if there are any
+  if ($navbarBurgers.length > 0 && $navItems.length > 0) {
+  	// Add a click event on each of them
+  	$navItems.forEach( el => {
+  		// For each of the items in the menu, add a click listener.
+  		el.addEventListener('click', () => {
+  			// Click the navbar burger menu when clicking the item.
+  			$navbarBurgers.forEach( nv => {
+  				$nv = document.getElementById(nv.dataset.target);
+  				$nv.classList.toggle('is-active');
+  			});
+  		});
+  	});
+  }
 });
