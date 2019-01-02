@@ -32,6 +32,10 @@ img {
 	width:100%;
 }
 
+p {
+	margin-top:10px !important;
+}
+
 .has-navbar-fixed-top {
 	padding-top: 5.75em !important;
 }
@@ -123,6 +127,7 @@ img {
 .headshot-container {
 	display: flex !important;
 	align-items: center !important;
+	max-width: 300px !important;
 }
 
 .title {
